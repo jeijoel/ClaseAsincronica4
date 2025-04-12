@@ -8,6 +8,9 @@ namespace ClaseAsincronica4
 {
     public partial class ArbolBinarioDeBusqueda
     {
+        internal string recorridoInOrder = "";
+        internal string recorridoPreOrder = "";
+        internal string recorridoPostOrder = "";
         public void InOrder()
         {
             InOrderRecursivo(raiz);
@@ -18,33 +21,36 @@ namespace ClaseAsincronica4
             {
                 InOrderRecursivo(raiz.Izquierda);
                 Console.Write(raiz.Valor + " ");
+                recorridoInOrder += raiz.Valor + " ";
                 InOrderRecursivo(raiz.Derecha);
             }
         }
-        public void preOrder()
+        public void PreOrder()
         {
-            preOrderRecursivo(raiz);
+            PreOrderRecursivo(raiz);
         }
-        private void preOrderRecursivo(NodoArbol<int>? raiz)
+        private void PreOrderRecursivo(NodoArbol<int>? raiz)
         {
             if (raiz != null)
             {
                 Console.Write(raiz.Valor + " ");
-                preOrderRecursivo(raiz.Izquierda);
-                preOrderRecursivo(raiz.Derecha);
+                recorridoPreOrder += raiz.Valor + " ";
+                PreOrderRecursivo(raiz.Izquierda);
+                PreOrderRecursivo(raiz.Derecha);
             }
         }
-        public void postOrder()
+        public void PostOrder()
         {
-            postOrderRecursivo(raiz);
+            PostOrderRecursivo(raiz);
         }
-        private void postOrderRecursivo(NodoArbol<int>? raiz)
+        private void PostOrderRecursivo(NodoArbol<int>? raiz)
         {
             if (raiz != null)
             {
-                postOrderRecursivo(raiz.Izquierda);
-                postOrderRecursivo(raiz.Derecha);
+                PostOrderRecursivo(raiz.Izquierda);
+                PostOrderRecursivo(raiz.Derecha);
                 Console.Write(raiz.Valor + " ");
+                recorridoPostOrder += raiz.Valor + " ";
             }
         }
     }

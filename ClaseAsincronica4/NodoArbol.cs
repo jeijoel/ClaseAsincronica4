@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClaseAsincronica4
 {
-    internal class NodoArbol<Tipo>
+    public class NodoArbol<Tipo>
     {
         public Tipo Valor { get; set; }
         public NodoArbol<Tipo>? Izquierda { get; set; }

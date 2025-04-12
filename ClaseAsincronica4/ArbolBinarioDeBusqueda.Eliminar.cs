@@ -8,7 +8,7 @@ namespace ClaseAsincronica4
 {
     public partial class ArbolBinarioDeBusqueda
     {
-        public void eliminar(int valor)
+        public void Eliminar(int valor)
         {
             raiz = eliminarRecursivo(raiz, valor);
         }

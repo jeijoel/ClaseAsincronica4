@@ -8,7 +8,7 @@ namespace ClaseAsincronica4
 {
     public partial class ArbolBinarioDeBusqueda
     {
-        private NodoArbol<int>? raiz;
+        internal NodoArbol<int>? raiz { get; set; }
         public ArbolBinarioDeBusqueda()
         {
             raiz = null;

@@ -4,6 +4,8 @@ VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseAsincronica4", "ClaseAsincronica4\ClaseAsincronica4.csproj", "{EC2BCEE4-45AC-47D1-AB3A-35AACCD6B6EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseAsincronica4Pruebas", "ClaseAsincronica4Pruebas\ClaseAsincronica4Pruebas.csproj", "{F4E62BB9-EFCE-4A74-B0BA-DA92A904C022}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{EC2BCEE4-45AC-47D1-AB3A-35AACCD6B6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC2BCEE4-45AC-47D1-AB3A-35AACCD6B6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC2BCEE4-45AC-47D1-AB3A-35AACCD6B6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E62BB9-EFCE-4A74-B0BA-DA92A904C022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E62BB9-EFCE-4A74-B0BA-DA92A904C022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E62BB9-EFCE-4A74-B0BA-DA92A904C022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E62BB9-EFCE-4A74-B0BA-DA92A904C022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
